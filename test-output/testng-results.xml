@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-02T20:49:30 IST" name="Suite" finished-at="2023-09-02T20:50:27 IST" duration-ms="57042">
+    <groups>
+    </groups>
+    <test started-at="2023-09-02T20:49:30 IST" name="TestThree" finished-at="2023-09-02T20:50:16 IST" duration-ms="45588">
+      <class name="tests.RegisterAccountTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:tests.RegisterAccountTest@487db668]" started-at="2023-09-02T20:49:30 IST" name="initializeBrowser" finished-at="2023-09-02T20:49:48 IST" duration-ms="17437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="registerNewAccount()[pri:0, instance:tests.RegisterAccountTest@487db668]" started-at="2023-09-02T20:49:48 IST" name="registerNewAccount" finished-at="2023-09-02T20:50:15 IST" duration-ms="26862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerNewAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterAccountTest@487db668]" started-at="2023-09-02T20:50:15 IST" name="tearDown" finished-at="2023-09-02T20:50:16 IST" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterAccountTest -->
+    </test> <!-- TestThree -->
+    <test started-at="2023-09-02T20:49:30 IST" name="TestTwo" finished-at="2023-09-02T20:50:24 IST" duration-ms="54053">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:49:30 IST" name="initializeBrowser" finished-at="2023-09-02T20:49:48 IST" duration-ms="17280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:49:48 IST" name="login" data-provider="getLoginData" finished-at="2023-09-02T20:50:00 IST" duration-ms="12428" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[venky2221@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.LoginTest.login(LoginTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:50:00 IST" name="tearDown" finished-at="2023-09-02T20:50:01 IST" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:50:01 IST" name="initializeBrowser" finished-at="2023-09-02T20:50:12 IST" duration-ms="10136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:50:12 IST" name="login" data-provider="getLoginData" finished-at="2023-09-02T20:50:23 IST" duration-ms="11357" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[venky22221@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Failure]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at tests.LoginTest.login(LoginTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@6187d1f5]" started-at="2023-09-02T20:50:23 IST" name="tearDown" finished-at="2023-09-02T20:50:24 IST" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- TestTwo -->
+    <test started-at="2023-09-02T20:49:30 IST" name="TestOne" finished-at="2023-09-02T20:50:27 IST" duration-ms="57042">
+      <class name="tests.EndtoEnd">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:tests.EndtoEnd@561868a0]" started-at="2023-09-02T20:49:30 IST" name="initializeBrowser" finished-at="2023-09-02T20:49:48 IST" duration-ms="17306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="Register()[pri:1, instance:tests.EndtoEnd@561868a0]" started-at="2023-09-02T20:49:48 IST" name="Register" finished-at="2023-09-02T20:50:15 IST" duration-ms="27019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method signature="Login()[pri:2, instance:tests.EndtoEnd@561868a0]" started-at="2023-09-02T20:50:15 IST" name="Login" finished-at="2023-09-02T20:50:26 IST" duration-ms="11382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndtoEnd@561868a0]" started-at="2023-09-02T20:50:26 IST" name="tearDown" finished-at="2023-09-02T20:50:27 IST" duration-ms="1309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EndtoEnd -->
+    </test> <!-- TestOne -->
+  </suite> <!-- Suite -->
+</testng-results>
